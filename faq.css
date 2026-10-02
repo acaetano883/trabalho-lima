@@ -1,8 +1,9 @@
 body {
     background-color: white; 
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    border: 10px solid  rgb(160, 31, 29);
-    border-radius:10px; 
+    border: 10px solid  rgb(63, 146, 126);
+    margin: 0;
 }
 
 h1 {
