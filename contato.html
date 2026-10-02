@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - SPFC Store</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="fundoVermelho">
+        <div class="banner">
+            <img src="imagens/spfc.webp" alt="Banner do São Paulo Futebol Clube">
+        </div>
+        <div class="menu">
+            <a href="index.html"><strong>Home</strong></a>
+            <a href="produtos.html"><strong>Produtos</strong></a>
+            <a href="faq.html"><strong>FAQ</strong></a>
+            <a href="contato.html"><strong>Contato</strong></a>
+            <a href="sobre.html"><strong>Sobre Nós</strong></a>
+        </div>
+    </div>
+    <h1>ENTRE EM CONTATO CONOSCO</h1>
+
+    <form>
+
+        <label for="nome"><strong>Nome:</strong></label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email"><strong>E-mail:</strong></label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="telefone"><strong>Telefone:</strong></label><br>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+
+        <label for="assunto"><strong>Assunto:</strong></label><br>
+        <input type="text" id="assunto" name="assunto"><br><br>
+
+        <p><strong>Escolha uma forma de contato:</strong></p>
+
+        <input type="radio" id="emailContato" name="contato" value="email">
+        <label for="emailContato">E-mail</label><br>
+
+        <input type="radio" id="telefoneContato" name="contato" value="telefone">
+        <label for="telefoneContato">Telefone</label><br>
+
+        <input type="radio" id="whatsapp" name="contato" value="whatsapp">
+        <label for="whatsapp">WhatsApp</label><br><br>
+
+        <p><strong>Produtos de interesse:</strong></p>
+
+        <input type="checkbox" id="camisa1" name="interesse" value="camisa1">
+        <label for="camisa1">Camisa I 26/27</label><br>
+
+        <input type="checkbox" id="camisa2" name="interesse" value="camisa2">
+        <label for="camisa2">Camisa II 26/27</label><br>
+
+        <input type="checkbox" id="camisa3" name="interesse" value="camisa3">
+        <label for="camisa3">Camisa III 26/27</label><br>
+
+        <input type="checkbox" id="camisaGoleiro" name="interesse" value="camisaGoleiro">
+        <label for="camisaGoleiro">Camisa de Goleiro 26/27</label><br><br>
+
+        <!-- Usei select id para escolha de alguma das cidades "padrão". -->
+        <label for="cidade"><strong>Cidade:</strong></label><br>
+        <select id="cidade" name="cidade">
+            <option value="santo-andre">Santo André</option>
+            <option value="sao-bernardo">São Bernardo do Campo</option>
+            <option value="sao-caetano">São Caetano do Sul</option>
+            <option value="sao-paulo">São Paulo</option>
+        </select><br><br>
+
+        <label for="mensagem"><strong>Deixe sua mensagem:</strong></label><br>
+        <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+
+</html>
