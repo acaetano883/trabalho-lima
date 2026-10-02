@@ -3,7 +3,7 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     border: 10px solid  rgb(63, 146, 126);
-    margin: 0;
+     margin: 0;
 }
 
 h2 {
@@ -83,3 +83,77 @@ ul {
   display: flex; 
   text-align: left;
 }
+
+
+
+
+
+
+/* minha parte do codigo */
+/*PARTE DO RODAPÉ*/
+.rodape{
+    background-color:rgb(63, 146, 126);
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+.rodape-direitos{
+    width: calc(100% - 20px);
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+/*PARTE DO FOOTER*/
+
+footer {
+	background-color: rgb(63, 146, 126);
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
