@@ -1,62 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato - SPFC Store</title>
-    <link rel="stylesheet" href="contato.css">
-</head>
+    <link rel="stylesheet" href="contato.css" />
+  </head>
 
-<body>
+  <body>
     <div class="fundo">
-        <div class="banner">
-            <img src="imagens/logo2.png" alt="Logo PortalTECH" />
-        </div>
-        <div class="menu">
-            <a href="index.html"><strong>INÍCIO</strong></a>
-            <a href="produtos.html"><strong>CURSOS</strong></a>
-            <a href="faq.html"><strong>FAQ</strong></a>
-            <a href="contato.html"><strong>CONTATO</strong></a>
-            <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
-        </div>
+      <div class="banner">
+        <img src="imagens/logo2.png" alt="Logo PortalTECH" />
+      </div>
+      <div class="menu">
+        <a href="index.html"><strong>INÍCIO</strong></a>
+        <a href="produtos.html"><strong>CURSOS</strong></a>
+        <a href="faq.html"><strong>FAQ</strong></a>
+        <a href="contato.html"><strong>CONTATO</strong></a>
+        <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
+      </div>
     </div>
-    <h1>MANDE SUA NOTÍCIA!</h1>
+    <br><br>
+    <div class="texto">
+      <h1>MANDE SUA NOTÍCIA!</h1>
+      <p>Tem uma notícia interessante para compartilhar?</p>
 
-    <form>
+      <p>
+        Conte para a gente! Pode ser um curso, evento ou descoberta relacionada
+        à tecnologia.
+      </p>
 
-        <label for="nome"><strong>Seu Nome:</strong></label><br>
+      <h2>Notícia Enviada com Sucesso! Aguarde a aprovação.</h2>
+    </div>
+
+    <div class="campos">
+      <form>
+        <label for="nome"><strong>Seu Nome:</strong></label
+        ><br />
         <input type="text" id="nome" name="nome" required><br><br>
 
         <label for="email"><strong>E-mail:</strong></label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required /><br><br>
 
         <label for="noticia"><strong>O que deseja compartilhar?</strong></label><br>
         <select id="noticia" name="noticia">
-            <option value="curso">Curso</option>
-            <option value="eventos">Evento</option>
-            <option value="descoberta">Descoberta</option>
+          <option value="curso">Curso</option>
+          <option value="eventos">Evento</option>
+          <option value="descoberta">Descoberta</option>
         </select><br><br>
 
-        <label for="assunto"><strong>Título da Notícia:</strong></label><br>
+        <label for="assunto"><strong>Título da Notícia:</strong></label
+        ><br>
         <input type="text" id="assunto" name="assunto" required><br><br>
 
         <label for="mensagem"><strong>Escreva sua notícia:</strong></label><br>
-        <textarea id="mensagem" name="mensagem"
-            style="width: 600px; height: 300px; resize: vertical;"></textarea><br><br>
-    </form>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          style="width: 400px; height: 200px; resize: vertical"
+        ></textarea><br><br>
+      </form>
 
-    <div class="botoes">
-        <form action="noticiaReiniciada.html">
-            <input type="reset" value="Limpar">
+      <div class="botoes">
+        <form action="contato.html">
+            <input type="submit" value="LIMPAR"><br><br>
         </form>
+
         <form action="noticiaEnviada.html">
-            <input type="submit" value="Enviar">
+          <input type="submit" value="ENVIAR">
         </form>
+      </div>
     </div>
-
-    <h2>Notícia Enviada com Sucesso! Aguarde a aprovação.</h2>
-
-</body>
-
+    <br><br>
+  </body>
 </html>
