@@ -36,25 +36,22 @@ a {
     justify-content: center;
 }
 
-.texto {
-    width: 400px;
-    display: inline-block;
-    margin: 30px;
+.organizacao {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
     vertical-align: top;
-    padding: 30px;
+    margin: 30px;
+}
 
-    h1 {
-        font-size: 60px;
-    }
-
-    p {
-        font-size: 30px;
-    }
+.texto img {
+    width: 800px;
+    vertical-align: top;
 }   
 
 .campos{
     width: 600px;
-    display: inline-block;
+    vertical-align: top;
     padding: 30px;
     background: rgb(63, 146, 126);
     color: white;
