@@ -4,119 +4,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre Nós - PortalTECH (Historia)</title>
+  <title>Sobre Nós - PortalTECH (História)</title>
   <link rel="stylesheet" href="sobre.css" />
 </head>
 
 <body>
-  <div class="fundo">
+  <!-- Cabeçalho e Navegação -->
+  <header class="fundo">
     <div class="banner">
       <img src="imagens/logo2.png" alt="Logo PortalTECH" />
     </div>
-    <div class="menu">
-      <a href="index.html"><strong>INÍCIO</strong></a>
-      <a href="produtos.html"><strong>CURSOS</strong></a>
-      <a href="faq.html"><strong>FAQ</strong></a>
-      <a href="contato.html"><strong>Contato</strong></a>
-      <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
-    </div>
-  </div>
+    <nav class="menu">
+      <a href="index.html">INÍCIO</a>
+      <a href="produtos.html">CURSOS</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contato.html">CONTATO</a>
+      <a href="sobre.html">SOBRE NÓS</a>
+    </nav>
+  </header>
+  <!--parte final do nav na cabeça da pagina-->
 
-  <!-- Usei esta div para dividir os tópicos. -->
-  <div class="sobre">
-    <h1>
-      <strong><u>COMO SURGIU A PortalTech?</u></strong>
-    </h1>
-    <p>
-      <strong>PortalTECH surgiu em uma conversa de bar entre amigos. Um dia, num
-        diálogo entre 4 programadores, comentava-se sobre a falta de um local
-        específico para o encontro de pessoas e informações do nicho de
-        tecnologia. Passaram então, a desenvolver um site que unisse eventos,
-        descobertas, cursos e pessoas do ramo tecnológico, a PortalTECH. Hoje
-        somos a principal comunidade de tecnologia do país, com mais de 200
-        mil usuários ativos!</strong>
-    </p>
-    <h1>
-      <strong><u>QUAL PROBLEMA PRETENDEMOS RESOLVER?</u></strong>
-    </h1>
-    <p>
-      <strong>O portal foi criado justamente com o fim de simplificar e unificar
-        todo o nicho tech dentro de um único ambiente, juntando todo o
-        conteúdo relacionado a computação.</strong>
-    </p>
-    <h1>
-      <strong><u>OBJETIVO</u>
-    </h1>
-    <p>O nosso principal objetivo é universalizar o acesso a:</p>
-    <div class="container">
-      <ul>
-        <li>Eventos do mundo Tech;</li>
-        <li>Conhecimentos de diversas áreas da computação;</li>
-        <li>Interação de colegas da área;</li>
-      </ul>
-      </strong>
-    </div>
-  </div>
+  <!-- Conteúdo Principal / Sobre a Empresa -->
+  <main class="sobre">
+    <section><!--PARTE DO TOPO DA PORTAL TECH-->
+      <!-- TOPO / CABEÇALHO -->
+      <header class="topo">
+        <h1 class="titulo-destaque">Sobre a PortalTech</h1>
+        <img class="imagem-destaque" src="imagens/sede da empresa.jpg" alt="Caminhão Loc Truck">
+        <div class="card-hero">
+
+          <h2>Como surgiu a PotaTech</h2>
+          <p>A PortalTECH surgiu em uma conversa de bar entre amigos. Um dia, num
+            diálogo entre 4 programadores, comentava-se sobre a falta de um local
+            específico para o encontro de pessoas e informações do nicho de
+            tecnologia. Passaram, então, a desenvolver um site que unisse eventos,
+            descobertas, cursos e pessoas do ramo tecnológico: a PortalTECH. Hoje
+            somos a principal comunidade de tecnologia do país, com mais de 200
+            mil usuários ativos!</p>
+        </div>
+      </header>
+    </section>
+    <!--FINAL DA PARTE DO SITE-->
+
+    <!--PARTE DO QUAL FALA SOBRE QUEM PRETENDEMOS RESOLVER OS PROBELMAS-->
+
+    <!-- CARD: COM QUEM PODEMOS CONTAR -->
+    <section class="card-secao">
+      <h2>QUAL PROBLEMA PRETENDEMOS RESOLVER?</h2>
+      <p> O portal foi criado justamente com o fim de simplificar e unificar
+        todo o nicho tech dentro de um único ambiente, reunindo todo o
+        conteúdo relacionado à computação.</p>
+    </section>
+
+    <!-- PARTE DO OBJETIVO-->
+
+    <section class="card-secao">
+      <h2>Objetivos e Futuro</h2>
+      <p class="subtitulo-objetivos">O nosso principal objetivo é universalizar o acesso a:</p>
+      <!--imagem da fimilia tecnologica-->
+      <img class="imagem-destaque" src="imagens/familia portal tech.jpg" alt="Caminhão Loc Truck">
+
+      <div class="grid-objetivos">
+
+        <div class="item-objetivo">
+          <img src="imagens da empresa/logo da empresa motorista.jpg" alt="Plataforma de Motoristas">
+          <p><strong>Eventos do mundo Tech;</strong></p>
+        </div>
+
+        <div class="item-objetivo">
+          <img src="imagens da empresa/pessoas fazendo mudanças.jpg" alt="Serviço de Carretos">
+          <p><strong>Conhecimentos de diversas áreas da computação;</strong></p>
+        </div>
+
+        <div class="item-objetivo">
+          <img src="imagens da empresa/mentoria de pesssoas.jpg" alt="Eventos e Mentorias">
+          <p><strong>Interação de colegas da área;</strong></p>
+        </div>
+  </main>
 
 
-  <!--minha parte do código-->
-  <footer class="rodape" id="contato">
-    <div class="rodape-div">
 
-      <div class="rodape-div-1">
-        <div class="rodape-div-1-coluna">
-
-          <span><b>LOGO</b></span>
-          <p>Avenida Paulista, 9999 — Bela Vista, São Paulo - SP, CEP 01311-000</p>
+  <!--PARTE FINAL DA PAGINA EM BAIXO-->
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Coluna da Marca -->
+      <div class="footer-brand">
+        <div class="logo"> TechPortal</div>
+        <p>Portal de notícias sobre desenvolvimento e tecnologia.</p>
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">X / Twitter</a>
         </div>
       </div>
 
-      <div class="rodape-div-2">
-        <div class="rodape-div-2-coluna">
-
-          <span><b>Contatos</b></span>
-          <p>portaltech@gmail.com</p>
-          <p>+55 11 99123-4567</p>
-        </div>
-      </div>
-
-      <div class="rodape-div-3">
-        <div class="rodape-div-3-coluna">
-
-          <span><b>Links</b></span>
-          <p><a href="cursos.html">Notícias</a></p>
-          <p><a href="#empres">Empresa</a></p>
-          <p><a href="sobre.html">Sobre Portal Tech</a></p>
-        </div>
-      </div>
-
-
-    </div>
-    <footer>
-      <p class="rodape-direitos">Copyright 2026 © - PortalTech™</p>
-      <p>Entre em contato pelo e-mail: portaltech@gmail.com</p>
-      <nav>
+      <!-- Colunas de Links -->
+      <div class="footer-col">
+        <h4>Navegação</h4>
         <ul>
-          <li><a href="#">Termos de uso</a></li>
-          <li><a href="#">Política de privacidade</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Cursos</a></li>
+          <li><a href="faq.htmlcontato.html">FAQ</a></li>
+          <li><a href="contato.html">Contatos</a></li>
         </ul>
-      </nav>
-    </footer>
+      </div>
+
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sub-footer / Barra de Copyright -->
+    <div class="footer-bottom">
+      <p>2026 TechPortal. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
