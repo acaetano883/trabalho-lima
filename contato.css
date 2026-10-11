@@ -30,6 +30,12 @@ a {
     margin-bottom: -35px;
 }
 
+.bannerForm img {
+    width: 300px;
+    display: center;
+    margin: -20px;
+}
+
 .agrupamentoflex {
     display: flex;
     gap: 30px;
