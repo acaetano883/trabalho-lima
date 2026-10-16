@@ -45,7 +45,7 @@ hr {
     justify-self: center;
     margin: 10px;
     border: 5px solid rgb(63, 146, 126);
-    boder-radius: 5px;
+    border-radius: 5px;
 
 }
 
@@ -62,4 +62,10 @@ hr {
 .conteudo{
     max-width: 1000px;
     font-size: 20px;
+}
+.texto{
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+    padding: 5px;
+    text-justify: distribute;
 }
