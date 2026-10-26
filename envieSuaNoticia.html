@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envie sua Notícia - PortalTECH</title>
+    <link rel="stylesheet" href="styleEnvieSuaNoticia.css">
+  </head>
+
+  <body>
+    <header>
+
+      <div class="banner">
+        <img src="imagens/logo2.png" alt="Logo PortalTECH" />
+      </div>
+
+      <nav class="menu">
+        <a href="index.html"><strong>INÍCIO</strong></a>
+        <a href="cursos.html"><strong>CURSOS</strong></a>
+        <a href="noticias.html"><strong>NOTÍCIAS</strong></a>
+        <a href="envieSuaNoticia.html"><strong>ENVIAR NOTÍCIA</strong></a>
+        <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
+      </nav>
+
+    </header>
+
+    <br><br>
+
+    <main>
+      <section class="organizacao">
+        <div class="texto">
+          <img src="imagens/textonoticia.png" alt="Mande sua notícia!" />
+        </div>
+
+        <div class="campos">
+          <form>
+            <label for="nome"><strong>Seu Nome:</strong></label
+            ><br />
+            <input type="text" id="nome" name="nome" required /><br /><br />
+
+            <label for="email"><strong>E-mail:</strong></label
+            ><br />
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="telefone"><strong>Telefone:</strong></label
+            ><br />
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              required
+            /><br>
+
+            <p><strong>Como prefere receber nosso retorno?</strong></p>
+            <input type="radio" id="contato_email" name="preferencia_contato" value="email" checked />
+            <label for="contato_email">E-mail</label>
+            <input type="radio" id="contato_telefone" name="preferencia_contato" value="telefone" />
+            <label for="contato_telefone">Telefone</label><br><br>
+
+            <label for="noticia"
+              ><strong>O que deseja compartilhar?</strong></label
+            ><br>
+            <select id="noticia" name="noticia">
+              <option value="curso">Curso</option>
+              <option value="eventos">Evento</option>
+              <option value="descoberta">Descoberta</option></select
+            ><br /><br />
+
+            <label for="assunto"><strong>Título da Notícia:</strong></label
+            ><br />
+            <input
+              type="text"
+              id="assunto"
+              name="assunto"
+              required
+            /><br><br>
+            <label for="mensagem"><strong>Escreva sua notícia:</strong></label><br>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="termos" name="termos" required />
+            <label for="termos"><strong>Declaro que as informações enviadas são verdadeiras e autorizo a publicação.</strong></label><br><br>
+          </form>
+
+          <div class="botoes">
+            <form action="envieSuaNoticia.html">
+              <input type="submit" value="LIMPAR" /><br /><br />
+            </form>
+
+            <form action="noticiaEnviada.html">
+              <input type="submit" value="ENVIAR" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

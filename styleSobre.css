@@ -8,6 +8,7 @@ body {
 
 h2 {
     color: rgb(63, 146, 126);
+    font-size: 40px
 }
 
 
@@ -27,6 +28,21 @@ a {
     gap: 15px;
     padding: 20px;
     border: 2px solid white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.menu a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
 }
 
 .banner img {
@@ -65,10 +81,6 @@ a {
 
 h1 {
     color: rgb(63, 146, 126);
-}
-
-h2 {
-    font-size: 40px;
 }
 
 li {
