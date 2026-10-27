@@ -141,12 +141,17 @@ main {
 
 .info {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
 }
 
 .info p {
     color: gray;
     font-size: 11px;
+}
+
+.info .autor {
+    font-weight: bold;
+    color: rgb(23, 92, 80);
 }
 
 
@@ -224,16 +229,18 @@ footer {
 /* Estilo das páginas de notícias */
 
 .noticia {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 10px;
+    width: 48%;
 }
 
 .noticia img {
-    width: 70%;
-    display: block;
-    margin: 20px auto;
     border-radius: 10px;
+    display: block;
 }
 
 .noticia h1 {
