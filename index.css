@@ -1,20 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    border: 10px solid rgb(63, 146, 126);
+}
+
+header {
+    background-color: #2d3849;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background-color: #2d3849;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-size: 20px;
 }
 
 .menu a {
-    color: white;
+    color: rgba(255, 255, 255, 0.74);
     text-decoration: none;
 }
 
 .menu a:hover {
     color: white;
-    text-decoration: underline;
 }
 
 .menu a:focus-visible {
@@ -35,19 +54,6 @@ h1 #bem-vindo {
 
 h2 {
     color: rgb(30, 60, 55);
-}
-
-header {
-    background-color: rgb(63, 146, 126);
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    gap: 15px;
-    padding: 20px;
-    border: 2px solid white;
 }
 
 .banner img {
@@ -113,12 +119,18 @@ main {
 }
 
 .card:hover {
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(212, 212, 212);
 }
 
 .card img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ;
+}
+
+.card img:hover {
+    scroll-snap-align: start;
+    transform: scale(1.01);
 }
 
 .linha-base .card {
@@ -135,12 +147,17 @@ main {
 
 .info {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
 }
 
 .info p {
     color: gray;
     font-size: 11px;
+}
+
+.info .autor {
+    font-weight: bold;
+    color: rgb(23, 92, 80);
 }
 
 
@@ -172,7 +189,7 @@ main {
 
 
 .em-alta {
-    width: 24%;
+    width: 27%; 
 }
 
 .em-alta h2 {
@@ -183,7 +200,7 @@ main {
 
 .item-alta {
     border-bottom: 1px solid lightgray;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .item-alta a {
@@ -218,16 +235,18 @@ footer {
 /* Estilo das páginas de notícias */
 
 .noticia {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 10px;
+    width: 48%;
 }
 
 .noticia img {
-    width: 70%;
-    display: block;
-    margin: 20px auto;
     border-radius: 10px;
+    display: block;
 }
 
 .noticia h1 {
@@ -251,4 +270,8 @@ footer {
 
 ul {
     list-style-type: none
+}
+
+.em-alta img {
+    width: 80%;
 }
