@@ -6,117 +6,225 @@ body {
     margin: 0;
 }
 
-h2 {
-    color: rgb(63, 146, 126);
+
+
+/*PARTE DOS CARDS DOS CURSOS */
+
+
+/* Container que obriga a ter 3 cards por fileira */
+.container-dos-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria exatamente 3 colunas de tamanhos iguais */
+    gap: 30px; /* Espaçamento entre os cards */
+    max-width: 1100px; /* Limita a largura máxima para a tela não esticar muito */
+    margin: 0 auto; /* Centraliza todo o bloco de cards na página */
+    padding: 20px;
 }
 
+/* Estrutura Principal do Card */
+.card {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    width: 100%; /* Agora ele obedece ao tamanho da coluna do grid */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Corta qualquer coisa que tentar sair das bordas arredondadas do card */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Área da Imagem e Etiqueta */
+.card-cabecalho {
+    position: relative;
+    height: 160px; /* Altura fixa da área da imagem */
+    background-color: #ffffff; /* Fundo branco útil para logotipos */
+    border-bottom: 1px solid #eeeeee; /* Linha sutil separando a imagem do texto (opcional) */
+}
+
+.card-cabecalho img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 'contain' resolve o problema da sua imagem, garantindo que o logo apareça inteiro sem esticar para fora */
+    padding: 15px; /* Dá um leve respiro (margem interna) para o logo não colar nas bordas */
+    display: block;
+}
+
+/* A Etiqueta Azul (Badge) */
+.badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #1c3b8a;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 15px;
+    z-index: 2; /* Garante que fique por cima da imagem sempre */
+}
+
+/* Área de Texto */
+.card-corpo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Garante que os cards tenham a mesma altura e alinhem os botões ao final */
+}
+
+.card-corpo h3 {
+    color: #1c3b8a;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.card-corpo p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 25px 0;
+    flex-grow: 1;
+}
+
+/* Botão */
+.botao {
+    display: block;
+    background-color: #fcb063;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    width: 120px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #e59a4c;
+}
+
+
+
+
+/*PARTE DO FOOTER*/
+
+footer {
+	background-color: rgb(63, 146, 126);
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 10px;
+}
 
 a {
-    color: white;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
-hr {
-    height: 2px;
-    background-color: rgb(63, 146, 126);
+/*OUTRA PARTE DO FOOTER*/
+.site-footer {
+  background-color:  rgb(63, 146, 126);
+  color: black;
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 3rem 1.5rem 1.5rem;
 }
 
-header {
-    background-color: rgb(63, 146, 126);
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    gap: 15px;
-    padding: 20px;
-    border: 2px solid white;
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.75rem;
 }
 
-.menu a {
-    color: white;
-    text-decoration: none;
+.footer-brand p {
+  color:rgb(255, 255, 255);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  max-width: 280px;
 }
 
-.menu a:hover {
-    color: white;
-    text-decoration: underline;
+.social-links a {
+  color:black;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
 }
 
-.menu a:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 3px;
+.social-links a:hover {
+  color: black;
 }
 
-.banner img {
-    width: 300px;
-    display: center;
-    margin-bottom: -35px;
+.footer-col h4 {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color:rgba(255, 255, 255, 0.721);
 }
 
-.imagens {
-    width: 300px;
-    display: inline;
-    padding: 30px;
-}
-
-.agrupamentoflex {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-
-.card {
-  display: flex;
-  justify-self: center;
-  gap: 16px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  max-width: 1000px;
-  border-radius: 5px;
-  margin: 10px;
-  background-color: rgb(63, 146, 126);
-}
-
-.card-foto {
-  border: 1px solid #999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 360px;        
-  height: 280px;        
-  flex-shrink: 0;       
-  overflow: hidden;     
-  border-radius: 5px 0 0 5px;
-  background-color: white;
-}
-
-.card-conteudo {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.card-titulo {
-    border-radius: 0 5px 0 0;
-    border: 1px solid #999;
-    padding: 12px;
-    margin: 0;
-    text-align: center;
-    background-color: white;
-}
-
-.card-descricao {
-  flex: 1;
-  border: 1px solid #999;
-  padding: 12px;
+.footer-col ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  border-radius: 0 0 5px 0;
-  background-color: white;
 }
 
-.curso{
-    color: #000;
+.footer-col li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+  color:black;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-col a:hover {
+  color:white;
+  transform: translateX(3px);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
