@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #2d3849;
+    background-color: #222d3f;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    background-color: #2d3849;
+    background-color: #222d3f;
     padding: 20px;
     position: sticky;
     top: 0;
