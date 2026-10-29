@@ -98,7 +98,7 @@ header {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: #1c3b8a;
+    background-color: #222d3f;
     color: #ffffff;
     font-size: 11px;
     font-weight: bold;
@@ -116,7 +116,7 @@ header {
 }
 
 .card-corpo h3 {
-    color: #1c3b8a;
+    color: #222d3f;
     font-size: 18px;
     margin: 0 0 10px 0;
     line-height: 1.2;
@@ -156,7 +156,7 @@ header {
 /*PARTE DO FOOTER*/
 
 footer {
-	background-color: rgb(63, 146, 126);
+	background-color: #222d3f;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
@@ -181,8 +181,8 @@ a {
 
 /*OUTRA PARTE DO FOOTER*/
 .site-footer {
-  background-color:  rgb(63, 146, 126);
-  color: black;
+  background-color:  #222d3f;
+  color: white;
   font-family: system-ui, -apple-system, sans-serif;
   padding: 3rem 1.5rem 1.5rem;
 }
@@ -193,14 +193,17 @@ a {
   display: grid;
   grid-template-columns: 2fr repeat(3, 1fr);
   gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
   padding-bottom: 2rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 .logo {
   font-size: 1.25rem;
   font-weight: 700;
-  color: black;
+  color: white;
   margin-bottom: 0.75rem;
 }
 
@@ -212,7 +215,7 @@ a {
 }
 
 .social-links a {
-  color:black;
+  color:white;
   margin-right: 1rem;
   text-decoration: none;
   font-size: 0.85rem;
@@ -220,7 +223,7 @@ a {
 }
 
 .social-links a:hover {
-  color: black;
+  color: white;
 }
 
 .footer-col h4 {
@@ -237,10 +240,11 @@ a {
 
 .footer-col li {
   margin-bottom: 0.5rem;
+  
 }
 
 .footer-col a {
-  color:black;
+  color:white;
   text-decoration: none;
   font-size: 0.875rem;
   transition: color 0.2s ease, transform 0.2s ease;
