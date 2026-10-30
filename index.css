@@ -45,7 +45,7 @@ header {
     border-bottom: 2px solid white;
 }
 
-h1 #bem-vindo {
+#bem-vindo {
     color: rgb(63, 146, 126);
     font-size: 30px;
     text-align: center;
@@ -63,7 +63,7 @@ h2 {
 }
 
 h3 {
-    color: rgb(30, 60, 55);
+    color: rgb(44, 182, 159);
     font-size: 15px;
     margin: 5px 0;
     text-align: left;
@@ -115,6 +115,7 @@ main {
     margin-bottom: 20px;
     padding: 5px;
     border-radius: 10px;
+    background-color:#1e293b;
     transition: background-color 0.3s;
 }
 
@@ -187,40 +188,51 @@ main {
     font-size: 11px;
 }
 
-
 .em-alta {
-    width: 27%; 
+    width: 30%;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    height: fit-content; /* Ajusta a altura de acordo com o conteúdo */
 }
 
-.em-alta h2 {
-    color: rgb(63, 146, 126);
-    font-size: 28px;
-    margin-top: 0;
+.em-alta img {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .item-alta {
-    border-bottom: 1px solid lightgray;
-    padding: 20px 0;
+    border-bottom: 1px solid #334155;
+    padding: 12px 0;
 }
 
-.item-alta a {
-    color: rgb(30, 60, 55);
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.item-alta a:hover {
-    color: rgb(63, 146, 126);
-    text-decoration: underline;
-}
-
-.item-alta p {
-    font-size: 11px;
-    color: gray;
+.item-alta:last-child {
+    border-bottom: none;
 }
 
 .item-alta .categoria {
-    font-size: 10px;
+    color: #14b8a6;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.item-alta a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+}
+
+.item-alta a:hover {
+    color: #14b8a6;
+}
+
+.item-alta .tempo {
+    color: #64748b;
+    font-size: 11px;
 }
 
 footer {
@@ -235,13 +247,13 @@ footer {
 /* Estilo das páginas de notícias */
 
 .noticia {
-    margin-bottom: 20px;
-    padding: 5px;
-    border: 2px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    border-radius: 10px;
-    width: 48%;
+    width: 50%;
+    flex: 2;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px rgba(0.3, 0.3, 0.3, 0.3);
+    border: 1px solid #ffffff;
+    padding: 32px;
 }
 
 .noticia img {
@@ -270,10 +282,6 @@ footer {
 
 ul {
     list-style-type: none
-}
-
-.em-alta img {
-    width: 80%;
 }
 
 footer {
