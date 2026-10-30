@@ -1,73 +1,64 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cursos</title>
-    <!-- Usei este link rel para utlizar os mesmos recursos CSS do index.html. -->
-    <link rel="stylesheet" href="curso.css" />
-  </head>
 
-  <body>
-    <header>
-        <div class="banner">
-            <img src="imagens/logo.png" alt="Logo PortalTECH" />
-        </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos</title>
+  <!-- Usei este link rel para utlizar os mesmos recursos CSS do index.html. -->
+  <link rel="stylesheet" href="curso.css" />
+</head>
 
-    <nav class="menu">
-        <a href="index.html"><strong>INÍCIO</strong></a>
-        <a href="cursos.html"><strong>CURSOS</strong></a>
-        <a href="noticias.html"><strong>NOTÍCIAS</strong></a>
-        <a href="envieSuaNoticia.html"><strong>ENVIAR NOTÍCIA</strong></a>
-        <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
-    </nav>
+<body>
+  <header>
+    <div class="banner">
+      <img src="imagens/logo.png" alt="Logo PortalTECH" />
+    </div>
+  </header>
 
-    <div class="card">
-      <div class="titulo">
-        <h1>Análise e Desenvolvimento de Sistemas (ADS)</h1>
-      </div>
-      <div>
-        <img class="imagem" src="imagens\ads.jpg" />
-      </div>
-      <div class="conteudo">
+  <nav class="menu">
+    <a href="index.html"><strong>INÍCIO</strong></a>
+    <a href="cursos.html"><strong>CURSOS</strong></a>
+    <a href="noticias.html"><strong>NOTÍCIAS</strong></a>
+    <a href="envieSuaNoticia.html"><strong>ENVIAR NOTÍCIA</strong></a>
+    <a href="sobre.html"><strong>SOBRE NÓS</strong></a>
+  </nav>
+
+  <div class="card">
+    <div class="titulo">
+      <h1>Análise e Desenvolvimento de Sistemas (ADS)</h1>
+    </div>
+    <div>
+      <img class="imagem" src="imagens\ads.jpg" />
+    </div>
+    <div class="conteudo">
+      
+      <!--OQUE É O CURSO-->
+      <details>
         <p class="texto">
-          Vivemos em um mundo onde quase todas as nossas interações, sejam elas
-          pessoais ou profissionais, são mediadas por algum tipo de software.
-          Desde o momento em que você acorda e desliga o alarme no seu
-          smartphone, até a hora em que pede um jantar por um aplicativo de
-          delivery ou assiste a uma série em uma plataforma de streaming, há uma
-          engrenagem invisível trabalhando nos bastidores. O curso de Análise e
-          Desenvolvimento de Sistemas (ADS) é a porta de entrada para você
-          deixar de ser apenas um consumidor dessas tecnologias e passar a ser o
-          criador delas. Este é um curso focado na prática, na agilidade e na
-          resolução de problemas reais por meio da escrita de códigos.
+         O que é o curso: Formação focada em lógica de programação para construir aplicações completas de ponta a ponta (Full-Stack), integrando interfaces dinâmicas (Front-end) e regras de negócios no servidor (Back-end).
+
+
         </p>
-        <p class="texto">
-          Ao ingressar nesta jornada, você passará por uma transformação
-          completa na sua forma de pensar. O primeiro passo é dominar a lógica
-          de programação, que é a base universal de como nos comunicamos com as
-          máquinas. A partir daí, o aluno mergulha em um universo vasto que
-          engloba tanto o "Front-end" (a parte visual e interativa com a qual o
-          usuário tem contato direto) quanto o "Back-end" (o motor do sistema,
-          os servidores e a lógica de negócios que operam por trás das telas). O
-          objetivo é formar um profissisonal versátil, muitas vezes chamado de
-          Desenvolvedor Full-Stack, capaz de entender e construir uma aplicação
-          de ponta a ponta.
+      </details>
+
+      <!--OQUE VAI APREDER-->
+      <details>
+        <summary>O que você vai aprender</summary>
+        <p class="texto-detalhe">
+       O que você vai aprender: Prática com linguagens modernas (JavaScript, Python, Java, C#), gestão de bancos de dados relacionais e não relacionais, desenvolvimento mobile (Android e iOS) e criação/consumo de APIs.
+
+      </details>
+
+      <!--OQUE VAI AJUDAR NA SUA CARRREIRA-->
+      <details>
+        <summary>Perfil e Carreira</summary>
+        <p class="texto-detalhe">
+          Mercado de Trabalho: Setor altamente aquecido com alta demanda em diversos segmentos, oferecendo flexibilidade para trabalho CLT, freelancer ou remoto para empresas no exterior com ganhos em moedas fortes (dólar/euro).
         </p>
-        <p class="texto">
-          Durante os semestres, o currículo exige que você coloque a mão na
-          massa. Você aprenderá a dominar linguagens de programação fundamentais
-          e modernas, como JavaScript, Python, Java ou C#, além de entender como
-          estruturar, armazenar e consultar volumes massivos de informações em
-          Bancos de Dados Relacionais (como MySQL e PostgreSQL) e Não
-          Relacionais (como MongoDB). Outro pilar fortíssimo do curso é o
-          desenvolvimento mobile, capacitando o aluno a criar aplicativos
-          nativos ou híbridos para os sistemas operacionais Android e iOS. O
-          curso também aborda a criação e o consumo de APIs (Interfaces de
-          Programação de Aplicações), que são as pontes que permitem que
-          diferentes sistemas conversem entre si na internet.
-        </p>
+      </details>
+      
+      <details>
         <p class="texto">
           O mercado de trabalho para o analista e desenvolvedor de sistemas é,
           indiscutivelmente, um dos mais aquecidos e rentáveis do mundo. A
@@ -81,22 +72,12 @@
           em empresas no exterior, ganhando em dólares ou euros sem precisar
           sair do Brasil.
         </p>
-        <p class="texto">
-          O perfil ideal para quem deseja cursar Análise e Desenvolvimento de
-          Sistemas vai muito além de "gostar de computadores". É preciso ter um
-          raciocínio lógico afiado, ser paciente e ter uma resiliência
-          gigantesca para lidar com frustrações diárias, afinal, lidar com
-          "bugs" (erros no código) faz parte da rotina. É uma profissão para
-          curiosos e autodidatas, pois a tecnologia muda em uma velocidade
-          assustadora, exigindo que o profissional estude e se atualize
-          constantemente ao longo de toda a sua carreira. Se você tem o desejo
-          de transformar ideias abstratas em ferramentas palpáveis que facilitam
-          a vida das pessoas, este é o seu caminho.
-        </p>
-      </div>
+      </details>
+      
     </div>
+  </div>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-container">
       <!-- Coluna da Marca -->
       <div class="footer-brand">
@@ -133,5 +114,6 @@
       <p>© 2026 PortalTECH. Todos os direitos reservados.</p>
     </div>
   </footer>
-  </body>
+</body>
+
 </html>
